@@ -9,12 +9,17 @@
 
     <style>
         .terra-background-dark{
-            background: #111;
+            background-image: linear-gradient(to bottom, rgb(22, 4, 32), rgb(16, 4, 24));
         }
 
         .terra-bold-font{
-            color: rgb(0,140,0);
-            font-weight: bold;
+            color: rgb(0,140,0) !important;
+            font-weight: bold !important;
+        }
+
+        .terra-active-font{
+            color: gold !important;
+            background-color: rgb(0,140,0);
         }
 
     </style>
@@ -24,7 +29,7 @@
 
     <body>
         <header>
-            <nav class="navbar navbar-dark navbar-expand-md nav-pills nav-fill bg-gray justify-content-end shadow-sm terra-background-dark" style="background-color:#111111">
+            <nav class="navbar navbar-dark navbar-expand-md nav-pills nav-fill bg-gray justify-content-end shadow-sm terra-background-dark">
                 <div class="container-fluid">
                 <a class="navbar-brand text-danger" href="Home.html">
                     <img src="Resources/Images/T_Logo_Full-1280x720-ModifiedForNav.png" alt="logo" width="275" height="50">
@@ -35,13 +40,13 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-white bg-success" href="Home.html">Home</a>
+                            <a class="nav-link terra-active-font" href="Home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link terra-bold-font" href="About.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="terra-bold-font nav-link" href="Staff.html">Meet The Team</a>
+                            <a class="nav-link terra-bold-font" href="Staff.html">Meet The Team</a>
                         </li>
                         <li class="nav-item dropdown">
                             <button class="btn dropdown-toggle terra-background-dark terra-bold-font" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,7 +62,7 @@
                                 </a>
                                 <a target="_blank" href="https://www.youtube.com/@prototype464">
                                     <div class="dropdown-item">
-                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="YouTube" style="float:left; margin: 0.25rem">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="YouTube" style="float:left; margin: 0.25rem ">
                                     <span class="terra-bold-font">Youtube</span>
                                     <br style="clear:both">
                                     </div>
@@ -67,6 +72,9 @@
                         <li class="nav-item">
                             <a class="nav-link terra-bold-font" href="Vote.html">Vote</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link terra-bold-font" href="https://store.terradiranalt.net">Store</a>
+                        </li>
                     </ul>
                 </div>
                 </div>
@@ -75,7 +83,7 @@
 
 
 
-        <footer style="background-color: #111; color:rgb(0, 140, 0)">
+        <footer class="terra-background-dark terra-bold-font">
             <hr>
             Terra © 2022
         </footer>
