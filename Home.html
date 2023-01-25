@@ -15,6 +15,11 @@
         .terra-bold-font{
             color: rgb(0,140,0) !important;
             font: bold 12pt Rockwell !important;
+            transition: all 0.5s ease !important;
+        }
+
+        .zoom-on-hover :hover {
+            font-size: 14.5pt !important;
         }
         
         .terra-active-font{
@@ -125,15 +130,18 @@
                         <li class="nav-item">
                             <a class="nav-link terra-active-font" href="Home.html">Home</a>
                         </li>
-                        <li class="nav-item">
+
+                        <li class="nav-item zoom-on-hover">
                             <a class="nav-link terra-bold-font" href="About.html">About Us</a>
                         </li>
-                        <li class="nav-item">
+
+                        <li class="nav-item zoom-on-hover">
                             <a class="nav-link terra-bold-font" href="Staff.html">Meet The Team</a>
                         </li>
+
                         <li class="nav-item dropdown">
-                            <button class="btn btn-block align-middle dropdown-toggle" style="background-color: rgba(0,0,0,0); padding: 0.25rem 0.5rem 0 3.5rem; margin-top: 0.235rem; color: white" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p class="terra-bold-font" style="margin: 0 0 -1.2rem -4rem;">Links</p>
+                            <button class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="background-color: rgba(0,0,0,0); padding: 0.25rem 0.5rem 0 3.5rem; margin-top: 0.235rem; color: white" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="terra-bold-font" style="margin: 0 0 -1.2rem -4rem;">Links</p>
                               </button>
                               <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavLinks">
                                 <a target="_blank" href="https://discord.gg/ZQPf3F9buU">
@@ -152,12 +160,68 @@
                                 </a>
                               </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link terra-bold-font" href="Vote.html">Vote</a>
+
+                        <li class="nav-item dropdown">
+                            <button class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="background-color: rgba(0,0,0,0); padding: 0.25rem 0.5rem 0 3rem; margin-top: 0.235rem; color: white" type="button" id="dropdownNavVotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="terra-bold-font" style="margin: 0 0 -1.2rem -3.5rem;">Vote</p>
+                              </button>
+                              <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavVotes">
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 1</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 2</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 3</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 4</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 5</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 6</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="#">
+                                <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Youtube-transparent.png" height="20" alt="Discord" style="float:left; margin-right: 0.3rem">
+                                    <span class="terra-bold-font">Vote 7</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                              </div>
                         </li>
-                        <li class="nav-item">
+
+                        <li class="nav-item zoom-on-hover">
                             <a class="nav-link terra-bold-font" href="https://store.terradiranalt.net">Store</a>
                         </li>
+
                     </ul>
                 </div>
                 </div>
@@ -325,7 +389,7 @@
             <a href="#"><span>footer link 1</span></a>
             <a href="#"><span>footer link 2</span></a>
             <a href="#"><span>footer link 3</span></a>
-            <hr>
+            <hr style="margin-bottom: 0px">
         </footer>
         <!-- footer ends here -->
 
