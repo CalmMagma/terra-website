@@ -14,12 +14,12 @@
 
         .terra-bold-font{
             color: rgb(0,140,0) !important;
-            font: bold 12pt Rockwell !important;
+            font: bold 1.2vw Rockwell !important;
             transition: all 0.5s ease !important;
         }
 
         .zoom-on-hover :hover {
-            font-size: 14.5pt !important;
+            font-size: 1.4vw !important;
         }
         
         .terra-active-font{
@@ -42,14 +42,14 @@
 
         .span-adjustment-left {
             text-align: left;
-            font: 16pt Rockwell;
+            font: 1.6vw Rockwell;
             color:rgb(37, 0, 37);
         }
 
         .span-adjustment-right {
             display: block;
             text-align: right;
-            font: 16pt Rockwell;
+            font: 1.6vw Rockwell;
             color:rgb(226, 255, 225);
         }
 
@@ -66,22 +66,45 @@
         }
 
         body {
-            font: 12pt Rockwell;
+            font: 1.2vw Rockwell;
         }
 
         h5 {
-            font: 64pt Ringbearer;
+            font: 5.35vw Ringbearer;
         }
 
         .h4-bright-back {
-            font: 28pt Ringbearer;
+            font: 2.35vw Ringbearer;
+            color:rgb(20, 0, 20);
+        }
+
+        .h3-bright-back {
+            font: 2vw Rockwell;
             color:rgb(20, 0, 20);
         }
 
         .h4-dark-back {
-            font: 28pt Ringbearer;
+            font: 2.35vw Ringbearer;
             color:rgb(190, 255, 190);
             text-align: right;
+        }
+
+        .image-placeholder-gamer {
+            background-color: black;
+        }
+
+        .video-adaptive-sizing {
+            background: black;
+        }
+
+        .carousel-subtitle {
+            font: 1.8vw Rockwell; 
+            text-shadow: 1px 2px rgba(0,0,0,0.8)
+        }
+
+        video {
+            width: 50%;
+            height: auto !important;
         }
 
         @font-face {
@@ -105,9 +128,11 @@
     </style>
 
     <script>
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
         const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
         document.getElementsByClassName("image-adaptive-sizing").clientHeight = vh;
-        // this sets the height of the image to whatever the size of the user's screen is ;)
+        document.getElementsByClassName("video-adaptive-sizing").clientHeight = vw - 640;
+        document.getElementsByClassName("video-adaptive-sizing").clientHeight = vh - 360;
     </script>
 
 
@@ -246,7 +271,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/Terra_Lobby_1.png" alt="Fifth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Community</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">Terra's heart and soul</p>
+                    <p class="carousel-subtitle">Terra's heart and soul</p>
                   </div>
               </div>
 
@@ -255,7 +280,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/SMP_Spawn_3.png" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>SMP</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">A traditional Survival MultiPlayer experience with a twist</p>
+                    <p class="carousel-subtitle">A traditional Survival MultiPlayer experience with a twist</p>
                   </div>
               </div>
 
@@ -263,7 +288,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/Hardcore_Spawn_1.png" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Hardcore</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">Vanilla hardcore for the stoic and lively</p>
+                    <p class="carousel-subtitle">Vanilla hardcore for the stoic and lively</p>
                   </div>
               </div>
 
@@ -271,7 +296,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/D_Cells.png" alt="Fourth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Prison</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">The classic 2012 prison with a factions-like exterior</p>
+                    <p class="carousel-subtitle">The classic 2012 prison with a factions-like exterior</p>
                   </div>
               </div>
 
@@ -279,7 +304,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/thicket-2560x1440.jpg" alt="Fifth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Economy</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">Make money and build stuff</p>
+                    <p class="carousel-subtitle">Make money and build stuff</p>
                   </div>
               </div>
 
@@ -287,7 +312,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/Creative_Spawn_1.png" alt="Sixth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Creative</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">Where your imagination can run freely</p>
+                    <p class="carousel-subtitle">Where your imagination can run freely</p>
                   </div>
               </div>
 
@@ -295,7 +320,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/squid-minigames.png" alt="Seventh slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Minigames</h5>
-                    <p style="font: 20pt Rockwell; text-shadow: 1px 2px rgba(0,0,0,0.8)">For comradery and lighthearted fun</p>
+                    <p class="carousel-subtitle">For comradery and lighthearted fun</p>
                   </div>
               </div>
 
@@ -316,10 +341,22 @@
 
         <div style="background-image: url(Resources/Images/sunlight-2560x1440.jpg); background-size: cover; background-position: center;">
             <div class="div-options-bright">
-                <img class="margin-image-left" src="Resources/Images/Logo-Discord-3381050329.png" height="160">
-
-                <h4 class="h4-bright-back">Lorem Ipsum</h4>
-                <span class="span-adjustment-left">Bottom text</span>
+                <h4 class="h4-bright-back" style="text-align:center">Join us at <strong style="font: 2.35vw Rockwell; text-decoration:underline">terratesting.ddns.net</strong>!</h4>
+                <video class="margin-image-left video-adaptive-sizing" autoplay muted loop>
+                  <source src="Resources/Video/joel.mp4" type="video/mp4">
+                  video jame here
+                </video>
+                <h3 class="h3-bright-back" style="margin-top:0; padding-top:0">But hold up! Don't forget to <strong>/verify</strong>!</h3>
+                <p class="span-adjustment-left">You will only need to do this on your first time joining!
+                    <br>You'll be using your main MC / Discord accounts.
+                    <br>This prevents alting and syncs ranks.
+                <ol style="list-style-position: inside;" class="span-adjustment-left">
+                    <li>Type /identify in-game</li>
+                    <li>Copy your Discord Tag or User ID</li>
+                    <li>Paste it in-game and press enter</li>
+                    <li>Make sure to have DMs enabled, the Terra Authenticator (our bot) should message you</li>
+                    <li>Click "Allow" if the username/UUID matches your own and you're done!</li>
+                </ol>
                 <br style="clear: both;">
 
             </div>
