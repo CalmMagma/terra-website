@@ -116,12 +116,31 @@
             height: auto !important;
         }
 
+        .terra-logo-main {
+            width: 26.5vw;
+            height: 3.65vw;
+        }
+
         .image-adaptive-sizing {
             display: block !important;
             margin-left: auto;
             margin-right: auto;
             width: 90% !important;
             height: auto !important;
+            border: 2vw solid #202225;
+            border-radius: 4.5vw;
+            border-top-left-radius: 0rem;
+        }
+
+        .carousel-indicator-base { 
+            padding-top: 0.5rem; 
+            border-radius: 3rem;
+            margin-bottom: 1.1vw;
+            transition: all 0.25s ease;
+        }
+
+        .carousel-indicator-base:hover {
+            background-color: rgba(255, 255, 255, 0.75);
         }
 
         @font-face {
@@ -167,8 +186,8 @@
     </style>
 
     <script>
-        const vw = window.innerWidth;
-        const vh = window.innerHeight - 150;
+        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
         document.getElementsByClassName("image-adaptive-sizing").clientHeight = vh;
     </script>
 
@@ -182,7 +201,7 @@
             <nav class="navbar fixed-top navbar-dark navbar-expand-md nav-pills nav-fill bg-gray justify-content-end shadow-sm terra-background-dark">
                 <div class="container-fluid">
                 <a class="navbar-brand text-danger" href="Home.html">
-                    <img src="Resources/Images/T_Logo_Full-1280x720-ModifiedForNav.png" alt="logo" width="351" height="48">
+                    <img src="Resources/Images/T_Logo_Full-1280x720-ModifiedForNav.png" class="terra-logo-main" alt="logo" width="351" height="48">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -294,16 +313,16 @@
         <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
             <ol class="carousel-indicators">
-              <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#mainCarousel" data-slide-to="1"></li>
-              <li data-target="#mainCarousel" data-slide-to="2"></li>
-              <li data-target="#mainCarousel" data-slide-to="3"></li>
-              <li data-target="#mainCarousel" data-slide-to="4"></li>
-              <li data-target="#mainCarousel" data-slide-to="5"></li>
-              <li data-target="#mainCarousel" data-slide-to="6"></li>
+              <li class="carousel-indicator-base active" data-target="#mainCarousel" data-slide-to="0"></li>
+              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="1"></li>
+              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="2"></li>
+              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="3"></li>
+              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="4"></li>
+              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="5"></li>
+              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="6"></li>
             </ol>
 
-            <div class="carousel-inner" style="background-color: #121212;">
+            <div class="carousel-inner" style="background-color: #202225;">
               <div class="carousel-item active">
                 <img class="image-adaptive-sizing" src="Resources/Images/Terra_Lobby_1.png" alt="Fifth slide">
                 <div class="carousel-caption d-none d-md-block">
@@ -365,12 +384,12 @@
             </div>
             
             <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-              <span style="font-size: 3rem; padding-left: 0;" aria-hidden="true">⮜</span>
+              <span style="font-size: 3vw; padding-left: 0; padding-right: 4.5rem;" aria-hidden="true">⮜</span>
               <span class="sr-only">Previous</span>
             </a>
 
             <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-              <span style="font-size: 3rem; padding-left: 0;" aria-hidden="true">⮞</span>
+              <span style="font-size: 3vw; padding-left: 4.5rem;" aria-hidden="true">⮞</span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -381,7 +400,7 @@
                 <h4 class="h4-bright-back" style="text-align:center">Join us at <strong style="font: 2.35vw Rockwell; text-decoration:underline">terratesting.ddns.net</strong>!</h4>
                 <video style="display: block; border-radius: 1.2rem;" class="margin-image-left video-adaptive-sizing" autoplay muted loop>
                   <source src="Resources/Video/joel.mp4" type="video/mp4">
-                  video jame here
+                  Oops, there was supposed to be a video here, but your browser can't render it. Sorry about that.
                 </video>
                 <div style="display: block; margin-top: 1rem;">
                     <h3 class="h3-bright-back" style="margin-top:0; padding-top:0">Don't forget to <strong>/verify</strong>!</h3>
