@@ -8,8 +8,14 @@
 	</head>
 
     <style>
-        .terra-background-dark{
-            background-color: rgba(16, 4, 24, 0.55);
+
+        .terra-background-dark {
+            background-color: rgba(16, 4, 24, 0.35);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .terra-background-dark:hover {
+            background-color: rgba(16, 4, 24, 0.75);
         }
 
         .terra-bold-font{
@@ -73,18 +79,18 @@
         }
 
         .h4-bright-back {
-            font: 2.35vw Ringbearer;
-            color:rgb(45,210,45);
+            font: 2.65vw Ringbearer;
+            color:rgb(25,195,25);
         }
 
         .h3-bright-back {
-            font: 2vw Rockwell;
-            color:rgb(190, 255, 190);
+            font: 2.1vw Rockwell;
+            color:rgb(215, 182, 0);
         }
 
         .h4-dark-back {
-            font: 2.35vw Ringbearer;
-            color:rgb(190, 255, 190);
+            font: 2.65vw Ringbearer;
+            color:rgb(45,210,45);
             text-align: right;
         }
 
@@ -110,6 +116,14 @@
             height: auto !important;
         }
 
+        .image-adaptive-sizing {
+            display: block !important;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90% !important;
+            height: auto !important;
+        }
+
         @font-face {
             font-family: "Ringbearer";
             src: url('Resources/Fonts/RingbearerD.ttf') format('truetype');
@@ -127,12 +141,34 @@
             src: url('Resources/Fonts/Minecraft-Ten.ttf') format('truetype');
         }
 
+        /* width */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: rgba(16, 4, 24);
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: rgb(155, 132, 0);
+            border-radius: 2rem;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgb(195, 172, 0);
+        }
+
+
 
     </style>
 
     <script>
-        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+        const vw = window.innerWidth;
+        const vh = window.innerHeight - 150;
         document.getElementsByClassName("image-adaptive-sizing").clientHeight = vh;
     </script>
 
@@ -166,7 +202,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <button class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="background-color: rgba(0,0,0,0); padding: 0.25rem 0.5rem 0 3.5rem; margin-top: 0.235rem; color: white" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="background-color: rgba(0,0,0,0); padding: 0.25rem 0.5rem 0 3.5rem; margin-top: 0.235rem; color: white; font-size: 1.2vw;" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <p class="terra-bold-font" style="margin: 0 0 -1.2rem -4rem;">Links</p>
                               </button>
                               <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavLinks">
@@ -267,9 +303,9 @@
               <li data-target="#mainCarousel" data-slide-to="6"></li>
             </ol>
 
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="background-color: #121212;">
               <div class="carousel-item active">
-                <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/Terra_Lobby_1.png" alt="Fifth slide">
+                <img class="image-adaptive-sizing" src="Resources/Images/Terra_Lobby_1.png" alt="Fifth slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Community</h5>
                     <p class="carousel-subtitle">Terra's heart and soul</p>
@@ -321,7 +357,7 @@
                 <img class="d-block w-100 image-adaptive-sizing" src="Resources/Images/squid-minigames.png" alt="Seventh slide">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Minigames</h5>
-                    <p class="carousel-subtitle">For comradery and lighthearted fun</p>
+                    <p class="carousel-subtitle">For lighthearted fun</p>
                   </div>
               </div>
 
@@ -348,13 +384,14 @@
                   video jame here
                 </video>
                 <div style="display: block; margin-top: 1rem;">
-                    <h3 class="h3-bright-back" style="margin-top:0; padding-top:0">But hold up! Don't forget to <strong>/verify</strong>!</h3>
-                    <p class="span-adjustment-left">You will only need to do this on your first time joining!
+                    <h3 class="h3-bright-back" style="margin-top:0; padding-top:0">Don't forget to <strong>/verify</strong>!</h3>
+                    <p class="span-adjustment-left"><i>You will only need to do this on your first time joining!
                         <br>You'll be using your main Minecraft/Discord accounts.
                         <br>This prevents alting and syncs ranks.
-                    <ol style="list-style-position: inside;" class="span-adjustment-left">
+                        <br>You agree to Terra's rules.</i></p>
+                    <ol style="list-style-position: inside; font: 1.4vw Rockwell" class="span-adjustment-left">
                         <li>Type /identify in-game</li>
-                        <li>Copy your Discord Tag or User ID</li>
+                        <li>Copy your Discord Tag (Username#0000) or User ID (000000000000000000)</li>
                         <li>Paste it in-game and press enter</li>
                         <li>Make sure to have DMs enabled, the Terra Authenticator (our bot) should message you</li>
                         <li>Click "Allow" if the username/UUID matches your own and you're done!</li>
@@ -427,9 +464,10 @@
             <hr style="padding-bottom: 0.8rem; margin: 0">
             <span style="text-align: start; margin-right: 0.55vw">Terra © 2023</span>
             <a class="footer-hover" target="_blank" href="https://forms.gle/EoSkZ3VKbE6xu2B1A" style="margin-right: 0.45vw"><span>Feedback</span></a>
-            <a class="footer-hover" target="_blank" href="https://forms.gle/nJDsSTGbaKHVABgC6" style="margin-right: 0.45vw"><span>Bounties</span></a>
-            <a class="footer-hover" target="_blank" href="https://forms.gle/hXnB94d6RztWRAqAA" style="margin-right: 0.45vw"><span>Report Player</span></a>
-            <a class="footer-hover" target="_blank" href="https://forms.gle/YoTkP5NiiYuYfkKTA" ><span>Report Staff</span></a>
+            <a class="footer-hover" target="_blank" href="https://forms.gle/9neKEFEwYCCdR4bn9" style="margin-right: 0.45vw"><span>Ban Appeal</span></a>
+            <a class="footer-hover" target="_blank" href="https://forms.gle/nJDsSTGbaKHVABgC6" style="margin-right: 0.45vw"><span>Bug Bounties</span></a>
+            <a class="footer-hover" target="_blank" href="https://forms.gle/hXnB94d6RztWRAqAA" style="margin-right: 0.45vw"><span>Report (Player)</span></a>
+            <a class="footer-hover" target="_blank" href="https://forms.gle/YoTkP5NiiYuYfkKTA" ><span>Report (Staff)</span></a>
             <hr style="margin-bottom: 0px">
         </footer>
         <!-- footer ends here -->
