@@ -4,37 +4,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<base target="_self"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<title>Terra</title>
+	    <link rel="stylesheet" href="Resources/Style Sheets/global-stuff.css">
+        <title>Terra</title>
 	</head>
 
     <style>
-
-        .terra-background-dark {
-            background-color: rgba(16, 4, 24, 0.35);
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .terra-background-dark:hover {
-            background-color: rgba(16, 4, 24, 0.85);
-        }
-
-        .terra-bold-font{
-            color: rgb(0,140,0) !important;
-            font: bold 1.25vw Rockwell !important;
-            transition: all 0.5s ease !important;
-        }
-
-        .zoom-on-hover :hover {
-            font-size: 1.4vw !important;
-        }
-        
-        .terra-active-font{
-            color: white !important;
-            background-image: linear-gradient(to bottom, rgb(0,90,0), rgb(0,140,0), rgb(0,90,0));
-            font-weight: bold;
-            border-radius: 2vw;
-        }
-
         .margin-image-left {
             margin-left: 2.5rem;
             margin-right: 1rem;
@@ -100,55 +74,9 @@
             text-shadow: 1px 2px rgba(0,0,0,0.8)
         }
 
-        .footer-hover {
-            font: 1.3vw Rockwell;
-            color: rgba(255, 255, 255, 0.55) !important;
-            text-decoration: none !important;
-        }
-
-        .footer-hover :hover {
-            font: 1.3vw Rockwell;
-            color: rgb(255,255,255) !important;
-            text-decoration: none !important; 
-        }
-
         video {
             width: 45%;
             height: auto !important;
-        }
-
-        .terra-logo-main {
-            width: 26.5vw;
-            height: 3.65vw;
-        }
-
-        .image-adaptive-sizing {
-            display: block !important;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90% !important;
-            height: auto !important;
-            border: 2vw solid rgba(0,0,0,0);
-            border-radius: 4.5vw;
-            border-top-left-radius: 0rem;
-        }
-
-        .dropdown-item-icon {
-            float: left; 
-            margin-right: 0.8vw; 
-            height: 1.5vw; 
-            width: auto
-        }
-
-        .dropdown-menu-nav {
-            margin-bottom: -1.5vw;
-            margin-right: 2.25vw;
-            margin-left: -2.25vw;
-        }
-
-        .nav-item {
-            margin-left: 0.75vw;
-            margin-right: 0.75vw;
         }
 
         .carousel-indicator-base { 
@@ -162,59 +90,10 @@
             background-color: rgba(255, 255, 255, 0.75);
         }
 
-        @font-face {
-            font-family: "Ringbearer";
-            src: url('Resources/Fonts/RingbearerD.ttf') format('truetype');
-        }
-
-        /* do not in the name of a kentucky fried fuck use this
-        @font-face {
-            font-family: "Rockwell";
-            src: url('Resources/Fonts/ROCK.TTF') format('truetype');
-        }
-        */
-
-        @font-face {
-            font-family: "Minecraft";
-            src: url('Resources/Fonts/Minecraft-Ten.ttf') format('truetype');
-        }
-
-        /* width */
-        ::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: rgba(16, 4, 24);
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: rgb(155, 132, 0);
-            border-radius: 2rem;
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgb(195, 172, 0);
-        }
-
-
-
     </style>
-
-    <script>
-        const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-        const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-        document.getElementsByClassName("image-adaptive-sizing").clientHeight = vh;
-    </script>
-
-
 
 
     <body>
-
         <!-- nav starts here -->
         <header>
             <nav class="navbar fixed-top navbar-dark navbar-expand-md nav-pills nav-fill bg-gray justify-content-end shadow-sm terra-background-dark">
