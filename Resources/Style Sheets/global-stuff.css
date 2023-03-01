@@ -4,8 +4,8 @@
     display: block !important;
     margin-left: auto;
     margin-right: auto;
-    width: 90% !important;
-    height: auto !important;
+    width: 90vw !important;
+    height: 100vh !important;
     border: 2vw solid rgba(0,0,0,0);
     border-radius: 4.5vw;
     border-top-left-radius: 0rem;
@@ -111,7 +111,6 @@
 ::-webkit-scrollbar-thumb {
     background: rgb(155, 132, 0);
     border-radius: 2rem;
-    margin-top: 10px;
 }
 
 /* Handle on hover */
