@@ -24,14 +24,17 @@
         }
 
         .span-adjustment-left {
+            display: block;
             text-align: left;
-            font: 1.6vw Rockwell;
+            margin-left: 1rem;
+            font: var(--font_small) Rockwell;
         }
 
         .span-adjustment-right {
             display: block;
             text-align: right;
-            font: 1.6vw Rockwell;
+            margin-right: 1rem;
+            font: var(--font_small) Rockwell;
         }
 
         .div-options-bright {
@@ -47,39 +50,64 @@
         }
 
         body {
-            font: 1.2vw Rockwell;
+            font: var(--font_body) Rockwell;
             color: rgb(244, 255, 244);
-            overflow: auto;
         }
 
         h5 {
-            font: 5.35vw Ringbearer;
+            font: var(--font_title) Ringbearer;
+        }
+
+        .dropdown-menu {
+            min-width: calc(fit-content + 400px);
+            min-height: calc(fit-content + 70px);
         }
 
         .h4-bright-back {
-            font: 2.65vw Ringbearer;
+            font: var(--font_heading) Ringbearer;
             color:rgb(25,195,25);
         }
 
         .h3-bright-back {
-            font: 2.1vw Rockwell;
+            font: var(--font_medium) Rockwell;
             color:rgb(215, 182, 0);
+            text-align: center;
         }
 
         .h4-dark-back {
-            font: 2.65vw Ringbearer;
+            font: var(--font_heading) Ringbearer;
             color:rgb(45,210,45);
             text-align: right;
         }
 
         .carousel-subtitle {
-            font: 1.8vw Rockwell; 
-            text-shadow: 1px 2px rgba(0,0,0,0.8)
+            font: var(--font_subtitle) Rockwell; 
+            text-shadow: 1px 2px rgba(0,0,0,0.8);
+            padding-bottom: 1.65vw;
         }
 
         .video-adaptive-sizing {
             width: 45vw;
-            height: 52.5vh !important;
+            height: 53vh;
+            display: block; 
+            border-radius: 1.2rem;
+        }
+
+        @media screen and (orientation: portrait) { 
+            .video-adaptive-sizing {
+                width: 98vw !important;
+                height: 50vh !important;
+                float: none !important;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        @media screen and (min-width: 1500px) {
+            .video-adaptive-sizing {
+                border-radius: 2.5rem;
+            }
         }
 
         .carousel-indicator-base { 
@@ -87,6 +115,12 @@
             border-radius: 3rem;
             margin-bottom: 1.1vw;
             transition: all 0.25s ease;
+        }
+        
+        @media screen and (min-width: 1680px) {
+            .carousel-indicator-base { 
+                display: none !important;
+            }
         }
 
         .carousel-indicator-base:hover {
@@ -102,7 +136,7 @@
             <nav class="navbar fixed-top navbar-dark navbar-expand-md nav-pills nav-fill bg-gray justify-content-end shadow-sm terra-background-dark">
                 <div class="container-fluid">
                 <a class="navbar-brand text-danger" href="Home.html">
-                    <img src="Resources/Images/T_Logo_Full-1280x720-ModifiedForNav.png" class="terra-logo-main" alt="logo" width="351" height="48">
+                    <img src="Resources/Images/T_Logo_Full-1280x720-ModifiedForNav.png" class="terra-logo-main" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -122,7 +156,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: 1.2vw;" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body);" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <p class="dropdown-menu-nav terra-bold-font">Links</p>
                               </div>
                               <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavLinks">
@@ -144,7 +178,7 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: 1.2vw; margin-bottom: -1.5vw" type="button" id="dropdownNavVotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body); margin-bottom: -1.5vw" type="button" id="dropdownNavVotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <p class="dropdown-menu-nav terra-bold-font" style="margin-right:1.65vw">Vote</p>
                               </div>
                               <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavVotes">
@@ -223,7 +257,7 @@
               <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="6"></li>
             </ol>
 
-            <div class="carousel-inner" style="background: #202225 url(Resources/Images/aspens-2560x1440.jpg) no-repeat center;">
+            <div class="carousel-inner" style="background: #202225 url(Resources/Images/aspens-2560x1440.jpg) content-box center;">
               <div class="carousel-item active">
                 <img class="image-adaptive-sizing" src="Resources/Images/Terra_Lobby_1.png" alt="Fifth slide">
                 <div class="carousel-caption d-none d-md-block">
@@ -296,8 +330,8 @@
 
         <div>
             <div class="div-options-bright">
-                <h4 class="h4-bright-back" style="text-align:center">Join us at <strong style="font: 2.35vw Rockwell; text-decoration:underline">terratesting.ddns.net</strong>!</h4>
-                <video style="display: block; border-radius: 1.2rem;" class="margin-image-left video-adaptive-sizing" autoplay muted loop>
+                <h4 class="h4-bright-back" style="text-align:center">Join us at <strong style="font: var(--font_medium) Rockwell; text-decoration:underline">terratesting.ddns.net</strong>!</h4>
+                <video class="margin-image-left video-adaptive-sizing" autoplay muted loop>
                   <source src="Resources/Video/joel.mp4" type="video/mp4">
                   Oops, there was supposed to be a video here, but your browser can't render it. Sorry about that.
                 </video>
@@ -307,7 +341,7 @@
                         <br>You'll be using your main Minecraft/Discord accounts.
                         <br>This prevents alting and syncs ranks.
                         <br>You agree to Terra's rules.</i></p>
-                    <ol style="list-style-position: inside; font: 1.4vw Rockwell" class="span-adjustment-left">
+                    <ol style="list-style-position: inside; font: calc(var(--font_small) - 2pt) Rockwell" class="span-adjustment-left">
                         <li>Type /identify in-game</li>
                         <li>Copy your Discord Tag (Username#0000) or User ID (000000000000000000)</li>
                         <li>Paste it in-game and press enter</li>

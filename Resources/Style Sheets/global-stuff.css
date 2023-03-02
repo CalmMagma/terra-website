@@ -1,6 +1,32 @@
                 
                 /* MISCELLANEOUS */
 
+@media screen and (orientation: landscape) {
+    :root {
+    --font_body: 1.2vw;
+    --font_small: 1.6vw;
+    --font_medium: 2.1vw;
+    --font_large: 2.35vw;
+    --font_heading: 2.65vw;
+
+    --font_subtitle: 1.8vw;
+    --font_title: 5.35vw;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    :root {
+    --font_body: 2.4vh !important;
+    --font_small: 3.2vh !important;
+    --font_medium: 4.2vh !important;
+    --font_large: 4.7vh !important;
+    --font_heading: 5.3vh !important;
+
+    --font_subtitle: 3.6vh !important;
+    --font_title: 10.7vh !important;
+    }
+}
+
 .image-adaptive-sizing {
     display: block !important;
     margin-left: auto;
@@ -11,6 +37,7 @@
     border-radius: 4.5vw;
     border-top-left-radius: 0rem;
 }
+
 
                 /* NAVBAR STYLESHEETS */
 
@@ -30,19 +57,26 @@
 
 .terra-bold-font{
     color: rgb(0,140,0) !important;
-    font: bold 1.25vw Rockwell !important;
+    font: bold calc(var(--font_body) + 1pt) Rockwell !important;
     transition: all 0.5s ease !important;
 }
 
 .zoom-on-hover :hover {
-    font-size: 1.4vw !important;
+    font-size: calc(var(--font_body) + 4pt) !important;
 }
 
 .terra-active-font {
     color: white !important;
     background-image: linear-gradient(to bottom, rgb(0,90,0), rgb(0,140,0), rgb(0,90,0));
     font-weight: bold;
-    border-radius: 2vw;
+    border-radius: 5vw;
+}
+
+@media screen and (min-width: 1500px) {
+    .terra-active-font {
+        padding: 0.4vw !important;
+        border-radius: 0.4vw !important;
+    }
 }
 
 .dropdown-item-icon {
@@ -66,13 +100,15 @@
                 /* FOOTER STYLESHEETS */
 
 .footer-hover {
-    font: 1.3vw Rockwell;
+    font-size: calc(var(--font_small) - 2pt);
+    font-family: Rockwell;
     color: rgba(255, 255, 255, 0.55) !important;
     text-decoration: none !important;
 }
 
 .footer-hover :hover {
-    font: 1.3vw Rockwell;
+    font-size: calc(var(--font_small) - 2pt);
+    font-family: Rockwell;
     color: rgb(255,255,255) !important;
     text-decoration: none !important; 
 }
