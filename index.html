@@ -58,11 +58,6 @@
             font: var(--font_title) Ringbearer;
         }
 
-        .dropdown-menu {
-            min-width: calc(fit-content + 400px);
-            min-height: calc(fit-content + 70px);
-        }
-
         .h4-bright-back {
             font: var(--font_heading) Ringbearer;
             color:rgb(25,195,25);
@@ -132,7 +127,7 @@
 
     <body>
         <!-- nav starts here -->
-        <div style="background-color:antiquewhite; background-image: url('Resources/Images/navbar collage.png'); background-position: center; background-repeat: no-repeat; background-size: 150%;">
+        <div class="navbar-background-for-real">
         <header>
             <nav class="navbar navbar-dark navbar-expand-md nav-pills nav-fill justify-content-end shadow-sm terra-background-dark">
                 <div class="container-fluid">
@@ -145,20 +140,24 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link terra-active-font" href="Home.html">Home</a>
+                            <a class="nav-link terra-active-font" href="index.html">Home</a>
                         </li>
 
                         <li class="nav-item zoom-on-hover">
-                            <a class="nav-link terra-bold-font" href="About.html">About Us</a>
+                            <a class="nav-link terra-bold-font" href="Staff.html">Meet Our Team</a>
+                        </li>
+
+                        <li class="nav-item zoom-on-hover">
+                            <a class="nav-link terra-bold-font" href="Guide.html">Network Guide</a>
                         </li>
 
                         <li class="nav-item zoom-on-hover" style="margin-right:2.25vw">
-                            <a class="nav-link terra-bold-font" href="Staff.html">Meet The Team</a>
+                            <a class="nav-link terra-bold-font" href="Staff.html">Wiki</a>
                         </li>
 
                         <li class="nav-item dropdown">
                             <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body);" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p class="dropdown-menu-nav terra-bold-font">Links</p>
+                            <p class="dropdown-menu-nav1 terra-bold-font">Links</p>
                               </div>
                               <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavLinks">
                                 <a target="_blank" href="https://discord.gg/ZQPf3F9buU">
@@ -175,12 +174,19 @@
                                     <br style="clear:both">
                                     </div>
                                 </a>
+                                <a target="_blank" href="#">
+                                    <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo_Frame.png" alt=" " class="dropdown-item-icon">
+                                    <span class="terra-bold-font">SMP World Map</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
                               </div>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body); margin-bottom: -1.5vw" type="button" id="dropdownNavVotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p class="dropdown-menu-nav terra-bold-font" style="margin-right:1.65vw" >Vote</p>
+                            <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body);" type="button" id="dropdownNavVotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <p class="dropdown-menu-nav2 terra-bold-font" style="margin-right:1.45vw" >Vote</p>
                               </div>
                               <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavVotes">
                                 <a target="_blank" href="#">

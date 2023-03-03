@@ -12,6 +12,14 @@
     --font_subtitle: 1.8vw;
     --font_title: 5.35vw;
     }
+
+    .navbar-background-for-real {
+        background-color:antiquewhite; 
+        background-image: url('navbar collage.png'); 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 150%;
+    }
 }
 
 @media screen and (orientation: portrait) {
@@ -24,6 +32,40 @@
 
     --font_subtitle: 3.6vh !important;
     --font_title: 10.7vh !important;
+    }
+
+    .navbar-background-for-real {
+        background-color:antiquewhite; 
+        background-image: url('navbar\ but\ portrait.png'); 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: 275%;
+    }
+
+    .dropdown-menu-nav1 {
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 0;
+        transition: all 0.5s ease;
+    }
+    
+    .dropdown-menu-nav2 {
+        margin-bottom: calc(-4vh - 1px);
+        margin-right: 2.25vw;
+        margin-left: -2.4vw;
+        margin-top: 1px;
+        transition: all 0.5s ease;
+    }
+    
+    .dropdown-menu-nav1:hover{
+        margin-left: -2.8vw !important;
+        margin-right: 2.8vw !important;
+    }
+    
+    .dropdown-menu-nav2:hover{
+        margin-left: -2.6vw !important;
+        margin-right: 2.45vw !important;
     }
 }
 
@@ -45,19 +87,20 @@ header {
     background-image: url("T_Logo_Full-1280x720-ModifiedForNav.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 140vh;
-    transition: all 0.8s ease-in-out !important;
+    background-size: 125vh;
+    transition: all 0.8s ease-in-out;
     opacity: 0.5;
 }
 
 header:hover {
-    background-size: 165vh;
+    background-size: 145vh;
     opacity: 1;
 }
 
+
 nav {
     opacity: 0;
-    transition: all 0.8s ease-in-out !important;
+    transition: all 0.8s ease-in-out;
 }
 
 nav:hover {
@@ -102,28 +145,52 @@ nav:hover {
     }
 }
 
-.dropdown-item-icon {
-    float: left; 
-    margin-right: 0.8vw; 
-    height: 1.5vw; 
-    width: auto
+.dropdown-item {
+    height: 4.2vh;
+    padding-left: 6vh;
+    vertical-align: top;
 }
 
-.dropdown-menu-nav {
-    margin-bottom: -1.5vw;
+.dropdown-item-icon {
+    float: left;
+    text-align: start;
+    margin-left: -4.5vh;
+    margin-right: 1.65vh;
+    height: 3.3vh; 
+    width: auto;
+    vertical-align: bottom !important;
+    padding: 0px;
+}
+
+.dropdown-menu-nav1 {
+    margin-bottom: calc(-1.5vw - 1px);
     margin-right: 2.25vw;
     margin-left: -2.25vw;
+    margin-top: 1px;
     transition: all 0.5s ease;
 }
 
-.dropdown-menu-nav:hover{
-    margin-left: -2.5vw !important;
-    margin-right: 2.5vw !important;
+.dropdown-menu-nav2 {
+    margin-bottom: calc(-1.5vw - 1px);
+    margin-right: 2.25vw;
+    margin-left: -2.4vw;
+    margin-top: 1px;
+    transition: all 0.5s ease;
+}
+
+.dropdown-menu-nav1:hover{
+    margin-left: -2.8vw !important;
+    margin-right: 2.8vw !important;
+}
+
+.dropdown-menu-nav2:hover{
+    margin-left: -2.6vw !important;
+    margin-right: 2.45vw !important;
 }
 
 .nav-item {
-    margin-left: 0.75vw;
-    margin-right: 0.75vw;
+    margin-left: 0.375vw;
+    margin-right: 0.375vw;
 }
 
                 /* FOOTER STYLESHEETS */
