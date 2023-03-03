@@ -31,8 +31,8 @@
     display: block !important;
     margin-left: auto;
     margin-right: auto;
-    width: 90vw !important;
-    height: 100vh !important;
+    width: 80vw !important;
+    height: 90vh !important;
     border: 2vw solid rgba(0,0,0,0);
     border-radius: 4.5vw;
     border-top-left-radius: 0rem;
@@ -41,18 +41,31 @@
 
                 /* NAVBAR STYLESHEETS */
 
+header {
+    background-image: url("T_Logo_Full-1280x720-ModifiedForNav.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 55%;
+    transition: all 0.8s ease-in-out !important;
+}
+
+header:hover {
+    background-size: 75%;
+}
+
+
 .terra-logo-main {
-    width: 26.5vw;
-    height: 3.65vw;
+    width: 2.5vw;
+    height: auto;
 }
 
 .terra-background-dark {
-    background-color: rgba(16, 4, 24, 0.55);
-    transition: background-color 0.3s ease-in-out;
+    background-color: rgba(16, 4, 24, 0.25);
+    transition: all 0.3s ease-in;
 }
 
 .terra-background-dark:hover {
-    background-color: rgba(16, 4, 24, 0.9);
+    background-color: rgba(16, 4, 24, 0.75);
 }
 
 .terra-bold-font{
@@ -90,6 +103,12 @@
     margin-bottom: -1.5vw;
     margin-right: 2.25vw;
     margin-left: -2.25vw;
+    transition: all 0.5s ease;
+}
+
+.dropdown-menu-nav:hover{
+    margin-left: -2.5vw !important;
+    margin-right: 2.5vw !important;
 }
 
 .nav-item {
