@@ -1,6 +1,11 @@
                 
                 /* MISCELLANEOUS */
 
+* {
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
 @media screen and (orientation: landscape) {
     :root {
     --font_body: 1.2vw;
@@ -39,33 +44,11 @@
         background-image: url('navbar\ but\ portrait.png'); 
         background-position: center;
         background-repeat: no-repeat; 
-        background-size: 275%;
+        background-size: 400%;
     }
 
-    .dropdown-menu-nav1 {
-        margin-bottom: 0;
-        margin-right: 0;
-        margin-left: 0;
-        margin-top: 0;
-        transition: all 0.5s ease;
-    }
-    
-    .dropdown-menu-nav2 {
-        margin-bottom: calc(-4vh - 1px);
-        margin-right: 2.25vw;
-        margin-left: -2.4vw;
-        margin-top: 1px;
-        transition: all 0.5s ease;
-    }
-    
-    .dropdown-menu-nav1:hover{
-        margin-left: -2.8vw !important;
-        margin-right: 2.8vw !important;
-    }
-    
-    .dropdown-menu-nav2:hover{
-        margin-left: -2.6vw !important;
-        margin-right: 2.45vw !important;
+    .nav-item::after {
+        content: \n;
     }
 }
 
@@ -108,8 +91,9 @@ nav:hover {
 }
 
 .terra-logo-main {
-    width: 6vh;
-    height: auto;
+    width: auto;
+    height: 6vh;
+    padding-top: 0px;
 }
 
 .terra-background-dark {
@@ -135,13 +119,38 @@ nav:hover {
     color: white !important;
     background-image: linear-gradient(to bottom, rgb(0,90,0), rgb(0,140,0), rgb(0,90,0));
     font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0vw;
+    margin-right: 0.375vw;
     border-radius: 5vw;
+    transition: opacity 0.8s ease-in-out !important;
 }
 
 @media screen and (min-width: 1500px) {
     .terra-active-font {
-        padding: 0.4vw !important;
+        padding: 0.6vw !important;
         border-radius: 0.4vw !important;
+    }
+
+    .nav-link {
+        vertical-align: middle;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0.375vw;
+        margin-right: 0.375vw;
+    }
+
+    .nav-item {
+        vertical-align: middle;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0.375vw;
+        margin-right: 0.375vw;
     }
 }
 
@@ -162,33 +171,22 @@ nav:hover {
     padding: 0px;
 }
 
-.dropdown-menu-nav1 {
-    margin-bottom: calc(-1.5vw - 1px);
-    margin-right: 2.25vw;
-    margin-left: -2.25vw;
-    margin-top: 1px;
-    transition: all 0.5s ease;
-}
-
-.dropdown-menu-nav2 {
-    margin-bottom: calc(-1.5vw - 1px);
-    margin-right: 2.25vw;
-    margin-left: -2.4vw;
-    margin-top: 1px;
-    transition: all 0.5s ease;
-}
-
-.dropdown-menu-nav1:hover{
-    margin-left: -2.8vw !important;
-    margin-right: 2.8vw !important;
-}
-
-.dropdown-menu-nav2:hover{
-    margin-left: -2.6vw !important;
-    margin-right: 2.45vw !important;
+.nav-link {
+    vertical-align: middle;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0.375vw;
+    margin-right: 0.375vw;
 }
 
 .nav-item {
+    vertical-align: middle;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
     margin-left: 0.375vw;
     margin-right: 0.375vw;
 }
@@ -216,12 +214,13 @@ nav:hover {
     src: url('Fonts/RingbearerD.ttf') format('truetype');
 }
 
-/* do not in the name of a kentucky fried fuck use this
+
 @font-face {
     font-family: "Rockwell";
-    src: url('Resources/Fonts/ROCK.TTF') format('truetype');
+    font-stretch: condensed;
+    src: url('Fonts/ROCK.TTF') format('truetype');
 }
-*/
+
 
 @font-face {
     font-family: "Minecraft";
