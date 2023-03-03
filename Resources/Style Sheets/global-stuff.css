@@ -45,13 +45,13 @@ header {
     background-image: url("T_Logo_Full-1280x720-ModifiedForNav.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 55%;
+    background-size: 140vh;
     transition: all 0.8s ease-in-out !important;
     opacity: 0.5;
 }
 
 header:hover {
-    background-size: 65%;
+    background-size: 165vh;
     opacity: 1;
 }
 
@@ -65,7 +65,7 @@ nav:hover {
 }
 
 .terra-logo-main {
-    width: 2.5vw;
+    width: 6vh;
     height: auto;
 }
 
