@@ -47,12 +47,22 @@ header {
     background-position: center;
     background-size: 55%;
     transition: all 0.8s ease-in-out !important;
+    opacity: 0.5;
 }
 
 header:hover {
-    background-size: 75%;
+    background-size: 65%;
+    opacity: 1;
 }
 
+nav {
+    opacity: 0;
+    transition: all 0.8s ease-in-out !important;
+}
+
+nav:hover {
+    opacity: 1;
+}
 
 .terra-logo-main {
     width: 2.5vw;
