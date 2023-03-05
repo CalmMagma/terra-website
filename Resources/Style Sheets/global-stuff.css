@@ -47,9 +47,7 @@
         background-size: 400%;
     }
 
-    .nav-item::after {
-        content: \n;
-    }
+
 }
 
 .image-adaptive-sizing {
@@ -75,7 +73,7 @@ header {
     opacity: 0.5;
 }
 
-header:hover {
+header:hover, header:focus {
     background-size: 145vh;
     opacity: 1;
 }
@@ -86,7 +84,7 @@ nav {
     transition: all 0.8s ease-in-out;
 }
 
-nav:hover {
+nav:hover, nav:focus {
     opacity: 1;
 }
 
