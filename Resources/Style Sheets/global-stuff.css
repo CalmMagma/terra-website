@@ -55,6 +55,14 @@
     nav:hover, nav:focus {
         opacity: initial !important;
     }
+
+    header {
+        background-size: 110vh !important;
+    }
+    
+    header:hover, header:focus {
+        background-size: 125vh !important;
+    }
 }
 
 
