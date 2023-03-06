@@ -46,6 +46,15 @@
         background-repeat: no-repeat; 
         background-size: 400%;
     }
+
+    nav {
+        opacity: initial !important;
+        transition: all 0.8s ease-in-out;
+    }
+    
+    nav:hover, nav:focus {
+        opacity: initial !important;
+    }
 }
 
 
@@ -216,7 +225,7 @@ nav:hover, nav:focus {
                 /* CUSTOM SCROLLBAR */
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 0.5vw;
 }
 
 /* Track */

@@ -6,10 +6,12 @@
         <link rel="icon" type="image/x-icon" href="Resources/Images/server-icon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	    <link rel="stylesheet" href="Resources/Style Sheets/global-stuff.css">
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet'>
         <title>Terra</title>
 	</head>
 
     <style>
+
         .image-adaptive-sizing {
             display: block !important;
             margin-left: auto;
@@ -117,6 +119,14 @@
             background-color: rgba(255, 255, 0, 0.55);
         }
 
+        .cool-emoji {
+            display:block; 
+            margin-left:48vw; 
+            margin-right:48vw; 
+            height: 8.5vh; 
+            width: auto
+        }
+
         .cool-guide-div a {
             font: var(--font_small) Rockwell; 
             color: rgb(25, 195, 25) !important;
@@ -138,7 +148,22 @@
             background-size: 75%;
         }
 
+        p.span-adjustment-right {
+            margin-left: 20vw; 
+            margin-right: 20vw; 
+        }
+
         @media screen and (orientation: portrait) { 
+
+            .cool-emoji {
+                margin-left: 44vw !important; 
+                margin-right: 50vw !important; 
+            }
+
+            p.span-adjustment-right {
+                margin-left: 5vw !important; 
+                margin-right: 5vw !important; 
+            }
 
             .video-adaptive-sizing {
                 width: 98vw !important;
@@ -408,12 +433,12 @@
             </div>
             
             <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-              <span style="font-size: 3rem; padding-left: 0; padding-right: 4vw;" aria-hidden="true">⮜</span>
+              <span style="font-size: 3rem; padding-left: 0; padding-right: 4vw; font-family: 'Droid Sans', sans-serif" aria-hidden="true">⮜</span>
               <span class="sr-only">Previous</span>
             </a>
 
             <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-              <span style="font-size: 3rem; padding-left: 4vw;" aria-hidden="true">⮞</span>
+              <span style="font-size: 3rem; padding-left: 4vw; font-family: 'Droid Sans', sans-serif" aria-hidden="true">⮞</span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -448,10 +473,10 @@
 
         <div>
             <div class="div-options-dark">
-                <img class="margin-image-left" style="display:block; margin-left:48vw; margin-right:48vw; height: 8.5vh; width: auto" src="Resources/Images/whar.webp" height="50">
+                <img class="margin-image-left cool-emoji" src="Resources/Images/whar.webp" height="50">
                 <br style="clear: both;">
                 <h3 class="h3-dark-back">Conchfused?</h3>
-                <p class="span-adjustment-right" style="margin-left: 20vw; margin-right: 20vw; line-break: normal;text-align:center">Don't be! Despite the many unorthodox things about the server, everything you might need to know is compiled onto a single, handy guide you can check out by clicking the book below!</p>
+                <p class="span-adjustment-right" style="text-align:center">Don't be! Despite the many unorthodox things about the server, everything you might need to know is compiled onto a single, handy guide you can check out by clicking the book below!</p>
                 <div class="cool-guide-div">
                 <div style="background-image:url(Resources/Images/book.webp); background-repeat: no-repeat; background-position: center; text-align: center; padding-top: 0.65rem; padding-bottom: 2rem;"><a href="Staff.html">Network Guide</a></div>
                 </div>
