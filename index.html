@@ -140,7 +140,11 @@
         }
 
         .carousel-indicator-base:hover {
-            background-color: rgba(255, 255, 255, 0.75);
+            background-color: rgba(255, 255, 255, 0.75) !important;
+        }
+
+        .carousel-indicator-base:active {
+            background-color: rgba(155, 155, 155, 0.75) !important;
         }
 
     </style>
@@ -180,7 +184,7 @@
                             <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body);" type="button" id="dropdownNavLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="terra-bold-font" style="margin-top: -0.1vh;">Links</span>
                               </div>
-                              <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavLinks">
+                              <div class="dropdown-menu" style="background-color: rgba(16, 4, 24, 0.75)" aria-labelledby="dropdownNavLinks">
                                 <a target="_blank" href="https://discord.gg/ZQPf3F9buU">
                                 <div class="dropdown-item">
                                     <img src="Resources/Images/Logo-Discord-3381050329.png" alt=" " class="dropdown-item-icon">
@@ -195,9 +199,23 @@
                                     <br style="clear:both">
                                     </div>
                                 </a>
-                                <a target="_blank" href="#">
+                                <a target="_blank" href="https://store.terradiranalt.net">
                                     <div class="dropdown-item">
                                     <img src="Resources/Images/Logo_Frame.png" alt=" " class="dropdown-item-icon">
+                                    <span class="terra-bold-font">Webstore</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="https://ko-fi.com/terramc">
+                                    <div class="dropdown-item">
+                                    <img src="Resources/Images/Logo-Ko-Fi.png" alt=" " class="dropdown-item-icon">
+                                    <span class="terra-bold-font">Ko-Fi (Donations)</span>
+                                    <br style="clear:both">
+                                    </div>
+                                </a>
+                                <a target="_blank" href="http://map.terradiranalt.net">
+                                    <div class="dropdown-item">
+                                    <img src="Resources/Images/637803056128514812.png" alt=" " class="dropdown-item-icon">
                                     <span class="terra-bold-font">SMP World Map</span>
                                     <br style="clear:both">
                                     </div>
@@ -209,7 +227,7 @@
                             <div class="zoom-on-hover btn btn-block align-middle dropdown-toggle" style="color: white; font-size: var(--font_body);" type="button" id="dropdownNavVotes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="terra-bold-font" style="margin-top: -0.1vh;">Vote</span>
                               </div>
-                              <div class="dropdown-menu terra-background-dark" aria-labelledby="dropdownNavVotes">
+                              <div class="dropdown-menu" style="background-color: rgba(16, 4, 24, 0.75)" aria-labelledby="dropdownNavVotes">
                                 <a target="_blank" href="#">
                                 <div class="dropdown-item">
                                     <img src="Resources/Images/Logo-Youtube-transparent.png" class="dropdown-item-icon">
@@ -265,7 +283,6 @@
                         <li class="nav-item zoom-on-hover" style="margin-left:0">
                             <a class="nav-link terra-bold-font" href="https://store.terradiranalt.net">Store</a>
                         </li>
-
                     </ul>
                 </div>
                 </div>
@@ -277,13 +294,13 @@
         <div id="mainCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
             <ol class="carousel-indicators">
-              <li class="carousel-indicator-base active" data-target="#mainCarousel" data-slide-to="0"></li>
-              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="1"></li>
-              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="2"></li>
-              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="3"></li>
-              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="4"></li>
-              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="5"></li>
-              <li class="carousel-indicator-base" data-target="#mainCarousel" data-slide-to="6"></li>
+              <li class="carousel-indicator-base active" style="background-color: rgba(42, 179, 32, 0.75);" data-target="#mainCarousel" data-slide-to="0"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(227, 218, 47, 0.75);" data-target="#mainCarousel" data-slide-to="1"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(32, 66, 179, 0.75);" data-target="#mainCarousel" data-slide-to="2"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(52, 32, 179, 0.75);" data-target="#mainCarousel" data-slide-to="3"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(179, 32, 155, 0.75);" data-target="#mainCarousel" data-slide-to="4"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(179, 32, 32, 0.75);" data-target="#mainCarousel" data-slide-to="5"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(32, 179, 145, 0.75);" data-target="#mainCarousel" data-slide-to="6"></li>
             </ol>
 
             <div class="carousel-inner" style="background: #202225 url(Resources/Images/aspens-2560x1440.jpg) content-box center; background-size: 250%;">
@@ -371,6 +388,7 @@
                         <br>This prevents alting and syncs ranks.
                         <br>You agree to Terra's rules.</i></p>
                     <ol style="list-style-position: inside; font: calc(var(--font_small) - 2pt) Rockwell" class="span-adjustment-left">
+                        <li>Join our Discord server</li>
                         <li>Type /identify in-game</li>
                         <li>Copy your Discord Tag (Username#0000) or User ID (000000000000000000)</li>
                         <li>Paste it in-game and press enter</li>
