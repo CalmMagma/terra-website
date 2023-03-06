@@ -34,14 +34,12 @@
         }
 
         .span-adjustment-left {
-            display: block;
             text-align: left;
             margin-left: 1rem;
             font: var(--font_small) Rockwell;
         }
 
         .span-adjustment-right {
-            display: block;
             text-align: right;
             margin-right: 1rem;
             font: var(--font_small) Rockwell;
@@ -85,6 +83,12 @@
             text-align: right;
         }
 
+        .h3-dark-back {
+            font: var(--font_medium) Rockwell;
+            color:rgb(195, 162, 0);
+            text-align: center;
+        }
+
         .carousel-subtitle {
             font: var(--font_subtitle) Rockwell; 
             text-shadow: 1px 2px rgba(0,0,0,0.8);
@@ -98,7 +102,44 @@
             border-radius: 1.2rem;
         }
 
+        .cool-guide-div {
+            border-radius: 4.5vh;
+            display: block;
+            transition: all 0.35s ease;
+            background-color: transparent;
+            width: min-content;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .cool-guide-div:hover {
+            background-color: rgba(255, 255, 0, 0.55);
+        }
+
+        .cool-guide-div a {
+            font: var(--font_small) Rockwell; 
+            color: rgb(25, 195, 25) !important;
+            text-decoration: none !important;
+            opacity: 0;
+            transition: all 0.35s ease;
+        }
+
+        .cool-guide-div a:hover {
+            font: calc(var(--font_small) + 2pt) Rockwell;
+            color: rgb(5, 155, 5) !important;
+            opacity: 1;
+            text-decoration: none !important;
+        }
+
+        .cool-guide-div div {
+            width: 18vh; 
+            height: 12vh; 
+            background-size: 75%;
+        }
+
         @media screen and (orientation: portrait) { 
+
             .video-adaptive-sizing {
                 width: 98vw !important;
                 height: 50vh !important;
@@ -147,6 +188,10 @@
             background-color: rgba(155, 155, 155, 0.75) !important;
         }
 
+        .carousel-indicators .active {
+            background-color: rgb(255, 255, 255) !important;
+        }
+
     </style>
 
 
@@ -177,7 +222,7 @@
                         </li>
 
                         <li class="nav-item zoom-on-hover">
-                            <a class="nav-link terra-bold-font" href="Staff.html">Wiki</a>
+                            <a class="nav-link terra-bold-font" href="https://wiki.terradiranalt.net">Wiki</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -295,12 +340,12 @@
 
             <ol class="carousel-indicators">
               <li class="carousel-indicator-base active" style="background-color: rgba(42, 179, 32, 0.75);" data-target="#mainCarousel" data-slide-to="0"></li>
-              <li class="carousel-indicator-base" style="background-color: rgba(227, 218, 47, 0.75);" data-target="#mainCarousel" data-slide-to="1"></li>
-              <li class="carousel-indicator-base" style="background-color: rgba(32, 66, 179, 0.75);" data-target="#mainCarousel" data-slide-to="2"></li>
-              <li class="carousel-indicator-base" style="background-color: rgba(52, 32, 179, 0.75);" data-target="#mainCarousel" data-slide-to="3"></li>
-              <li class="carousel-indicator-base" style="background-color: rgba(179, 32, 155, 0.75);" data-target="#mainCarousel" data-slide-to="4"></li>
-              <li class="carousel-indicator-base" style="background-color: rgba(179, 32, 32, 0.75);" data-target="#mainCarousel" data-slide-to="5"></li>
-              <li class="carousel-indicator-base" style="background-color: rgba(32, 179, 145, 0.75);" data-target="#mainCarousel" data-slide-to="6"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(5, 150, 20, 0.75);" data-target="#mainCarousel" data-slide-to="1"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(179, 32, 32, 0.75);" data-target="#mainCarousel" data-slide-to="2"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(43, 19, 198, 0.75);" data-target="#mainCarousel" data-slide-to="3"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(195, 193, 36, 0.75);" data-target="#mainCarousel" data-slide-to="4"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(157, 32, 179, 0.75);" data-target="#mainCarousel" data-slide-to="5"></li>
+              <li class="carousel-indicator-base" style="background-color: rgba(44, 207, 180, 0.75);" data-target="#mainCarousel" data-slide-to="6"></li>
             </ol>
 
             <div class="carousel-inner" style="background: #202225 url(Resources/Images/aspens-2560x1440.jpg) content-box center; background-size: 250%;">
@@ -403,48 +448,15 @@
 
         <div>
             <div class="div-options-dark">
-                <img class="margin-image-right" src="Resources/Images/Logo-Discord-3381050329.png" height="160">
-
-                <h4 class="h4-dark-back">Lorem Ipsum</h4>
-                <span class="span-adjustment-right">Bottom text</span>
+                <img class="margin-image-left" style="display:block; margin-left:48vw; margin-right:48vw; height: 8.5vh; width: auto" src="Resources/Images/whar.webp" height="50">
                 <br style="clear: both;">
-
+                <h3 class="h3-dark-back">Conchfused?</h3>
+                <p class="span-adjustment-right" style="margin-left: 20vw; margin-right: 20vw; line-break: normal;text-align:center">Don't be! Despite the many unorthodox things about the server, everything you might need to know is compiled onto a single, handy guide you can check out by clicking the book below!</p>
+                <div class="cool-guide-div">
+                <div style="background-image:url(Resources/Images/book.webp); background-repeat: no-repeat; background-position: center; text-align: center; padding-top: 0.65rem; padding-bottom: 2rem;"><a href="Staff.html">Network Guide</a></div>
+                </div>
             </div>
         </div>
-
-        <div>
-            <div class="div-options-bright">
-                <img class="margin-image-left" src="Resources/Images/Logo-Discord-3381050329.png" height="160">
-
-                <h4 class="h4-bright-back">Lorem Ipsum</h4>
-                <span class="span-adjustment-left">Bottom text</span>
-                <br style="clear: both;">
-
-            </div>
-        </div>
-
-        <div>
-            <div class="div-options-dark">
-                <img class="margin-image-right" src="Resources/Images/Logo-Discord-3381050329.png" height="160">
-
-                <h4 class="h4-dark-back">Lorem Ipsum</h4>
-                <span class="span-adjustment-right">Bottom text</span>
-                <br style="clear: both;">
-
-            </div>
-        </div>
-
-        <div>
-            <div class="div-options-bright">
-                <img class="margin-image-left" src="Resources/Images/Logo-Discord-3381050329.png" height="160">
-
-                <h4 class="h4-bright-back">Lorem Ipsum</h4>
-                <span class="span-adjustment-left">Bottom text</span>
-                <br style="clear: both;">
-
-            </div>
-        </div>
-
 
         <!-- footer starts here -->
         <footer style="background-color: rgb(16, 0, 12); text-align: center; vertical-align: middle;">
